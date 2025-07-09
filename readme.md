@@ -1,8 +1,14 @@
+<div align="center">
+<a href="https://github.com/ajb3932/immich-partner-sharing"><img src="https://raw.githubusercontent.com/ajb3932/immich-partner-sharing/refs/heads/main/public/images/partnersharing.png" title="Logo" style="max-width:100%;" width="128" /></a>
+</div>
+
 # Immich Partner Sharing
 
 Automatically sync faces to albums in Immich, recreating Google Photos partner sharing functionality.
 
-Built on the amazing work from 
+Built on the amazing python package by romainrbr.
+
+Initially created as my wife and I have seperate Immich accounts but would like to share photos of our daughter.
 
 ## Features
 
@@ -15,11 +21,16 @@ Built on the amazing work from
 
 ## Quick Start
 
-Create shared albums for each account, something like *Partner Sharing (Person)*
-Clone the repo
-cp .env-example -> .env
-Update the values in .env
+- Create shared albums for each account, something like *Partner Sharing (Person)*.
+- Create API keys for users.
+- Find IDs for Faces, and albums.
+
+```bash
+git clone https://github.com/ajb3932/immich-partner-sharing.git
+cp .env-example .env
+# edit vars in .env
 docker compose up -d
+```
 
 ### Example Configuration
 
