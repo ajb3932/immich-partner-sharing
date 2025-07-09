@@ -1,0 +1,27 @@
+services:
+  immich-partner-sharing:
+    build: .
+    container_name: immich-partner-sharing
+    restart: unless-stopped
+    network_mode: host
+    environment:
+      - IMMICH_SERVER=${IMMICH_SERVER} # Required: Immich server URL
+      - SYNC_INTERVAL_MINUTES=${SYNC_INTERVAL} # Optional: Sync interval in minutes (default: 60)
+      - RUN_ONCE=${RUN_ONCE} # Optional: Run once and exit (default: false)
+      - DRY_RUN=${DRY_RUN} # Optional: Dry run mode - log what would happen without making changes
+      
+      # Sync Mappings (add as many as needed)
+      # Format: api_key:face_id:album_id:description
+      #- SYNC_MAPPING_1=your-api-key-1:face-id-1:album-id-1:Photos of John
+      - SYNC_MAPPING_1=${SYNC_MAPPING_1}
+      - SYNC_MAPPING_2=${SYNC_MAPPING_2}
+      - SYNC_MAPPING_3=${SYNC_MAPPING_3}
+      - SYNC_MAPPING_4=${SYNC_MAPPING_4}
+      # Add more mappings as needed...
+      
+    healthcheck:
+      test: ["CMD", "python", "-c", "import requests; requests.get('${IMMICH_SERVER}/api/server-info')"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s

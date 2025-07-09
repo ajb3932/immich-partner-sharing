@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>immich-partner-sharing</Name>
+  <Repository>ajb3932/immich-partner-sharing</Repository>
+  <Registry>https://hub.docker.com/r/ajb3932/immich-partner-sharing</Registry>
+  <Network>host</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://github.com/ajb3932/immich-partner-sharing</Support>
+  <Project>https://github.com/ajb3932/immich-partner-sharing</Project>
+  <Overview>Automatically sync face-detected photos to albums in Immich. Recreates Google Photos partner sharing functionality by organizing photos of specific people into dedicated albums.</Overview>
+  <Category>MediaApp:Photos</Category>
+  <WebUI/>
+  <TemplateURL>https://raw.githubusercontent.com/ajb3932/immich-partner-sharing/main/templates/unraid-template.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/ajb3932/immich-partner-sharing/main/icon.png</Icon>
+  <ExtraParams>--restart=unless-stopped</ExtraParams>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled></DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires>Immich server running and accessible</Requires>
+  <Config Name="Immich Server URL" Target="IMMICH_SERVER" Default="http://localhost:2283" Mode="" Description="URL of your Immich server" Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="Sync Interval (Minutes)" Target="SYNC_INTERVAL_MINUTES" Default="60" Mode="" Description="How often to check for new photos (in minutes)" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="Dry Run Mode" Target="DRY_RUN" Default="false" Mode="" Description="Set to 'true' to see what would happen without making changes" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="Run Once" Target="RUN_ONCE" Default="false" Mode="" Description="Set to 'true' to run once and exit (for testing)" Type="Variable" Display="always" Required="false" Mask="false"/>
+  
+  <!-- Sync Mapping 1 -->
+  <Config Name="Sync Mapping 1" Target="SYNC_MAPPING_1" Default="" Mode="" Description="Format: api_key:face_id:album_id:description" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="Sync Mapping 2" Target="SYNC_MAPPING_2" Default="" Mode="" Description="Format: api_key:face_id:album_id:description" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="Sync Mapping 3" Target="SYNC_MAPPING_3" Default="" Mode="" Description="Format: api_key:face_id:album_id:description" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="Sync Mapping 4" Target="SYNC_MAPPING_4" Default="" Mode="" Description="Format: api_key:face_id:album_id:description" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="Sync Mapping 5" Target="SYNC_MAPPING_5" Default="" Mode="" Description="Format: api_key:face_id:album_id:description" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="Sync Mapping 6" Target="SYNC_MAPPING_6" Default="" Mode="" Description="Format: api_key:face_id:album_id:description" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="Sync Mapping 7" Target="SYNC_MAPPING_7" Default="" Mode="" Description="Format: api_key:face_id:album_id:description" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="Sync Mapping 8" Target="SYNC_MAPPING_8" Default="" Mode="" Description="Format: api_key:face_id:album_id:description" Type="Variable" Display="always" Required="false" Mask="false"/>
+</Container>
