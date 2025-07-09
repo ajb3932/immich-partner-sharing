@@ -4,7 +4,7 @@
 
 # 🤝 Immich Partner Sharing
 
-Automatically sync face-detected photos to albums in Immich, recreating Google Photos partner sharing functionality.
+Automatically sync faces to albums in Immich, recreating Google Photos partner sharing functionality.
 
 Built on the amazing Python package [immich-face-to-album](https://pypi.org/project/immich-face-to-album/) by romainrbr.
 
