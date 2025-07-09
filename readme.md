@@ -10,8 +10,6 @@ Built on the amazing Python package [immich-face-to-album](https://pypi.org/proj
 
 Initially created as my wife and I have separate Immich accounts but would like to share photos of our daughter automatically.
 
-💁 This solves one of the biggest barriers preventing families from migrating from Google Photos to Immich!
-
 ## 📷 Screenshot
 
 <img src="https://raw.githubusercontent.com/ajb3932/immich-partner-sharing/main/screenshot.jpg" title="App Screenshot" style="max-width:100%;" alt='App Screenshot'/>
