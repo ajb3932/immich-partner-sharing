@@ -175,6 +175,19 @@ MIT License - feel free to use and modify!
 - Inspired by Google Photos partner sharing functionality
 - Created for the amazing [Immich](https://immich.app/) self-hosted photo management platform
 
+## ⭐ Star History
 <div align="center">
-<a href='https://ko-fi.com/F1F11GNNZU' target='_blank'><img height='36' style='border:0px;height:36px;' src='https://storage.ko-fi.com/cdn/kofi4.png?v=6' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a>
+<a href="https://www.star-history.com/#ajb3932/immich-partner-sharing&Date">
+ <picture>
+   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=ajb3932/immich-partner-sharing&type=Date&theme=dark" />
+   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=ajb3932/immich-partner-sharing&type=Date" />
+   <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=ajb3932/immich-partner-sharing&type=Date" />
+ </picture>
+</a>
+</div>  
+
+## ☕ Support
+<div align="center">
+<a href='https://ko-fi.com/F1F11GNNZU' target='_blank'><img height='36' style='border:0px;height:36px;' src='https://storage.ko-fi.com/cdn/kofi4.png?v=6' border='0' alt='Buy Me a Coffee at ko-fi.com' />
+</a>
 </div>
