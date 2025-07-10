@@ -25,7 +25,7 @@ Initially created as my wife and I have separate Immich accounts but would like 
 
 ## ⚠️ Disclaimer
 
-**This project is not affiliated with [immich](https://github.com/immich-app/immich)!**
+**This is not an official [immich](https://github.com/immich-app/immich) project**
 
 ## 🐳 Docker 
 
