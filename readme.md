@@ -23,6 +23,10 @@ Initially created as my wife and I have separate Immich accounts but would like 
 - ✅ **Health Checks**: Built-in monitoring and error handling
 - ✅ **Unraid Ready**: Includes Community Applications template
 
+## ⚠️ Disclaimer
+
+**This project is not affiliated with [immich][immich-github-url]!**
+
 ## 🐳 Docker 
 
 **Docker Compose:**
