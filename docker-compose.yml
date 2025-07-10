@@ -1,7 +1,7 @@
 services:
   immich-partner-sharing:
-    build: .
     container_name: immich-partner-sharing
+    image: ajb3932/immich-partner-sharing:latest
     restart: unless-stopped
     network_mode: host
     environment:
@@ -14,9 +14,9 @@ services:
       # Format: api_key:face_id:album_id:description
       #- SYNC_MAPPING_1=your-api-key-1:face-id-1:album-id-1:Photos of John
       - SYNC_MAPPING_1=${SYNC_MAPPING_1}
-      - SYNC_MAPPING_2=${SYNC_MAPPING_2}
-      - SYNC_MAPPING_3=${SYNC_MAPPING_3}
-      - SYNC_MAPPING_4=${SYNC_MAPPING_4}
+      #- SYNC_MAPPING_2=${SYNC_MAPPING_2}
+      #- SYNC_MAPPING_3=${SYNC_MAPPING_3}
+      #- SYNC_MAPPING_4=${SYNC_MAPPING_4}
       # Add more mappings as needed...
       
     healthcheck:
