@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Immich Face Sync - Community Docker App
+Immich Partner Sharing - Community Docker App
 Uses the existing immich-face-to-album package
 """
 
@@ -25,7 +25,7 @@ logger = logging.getLogger(__name__)
 
 class ImmichFaceSync:
     def __init__(self):
-        """Initialize the Face Sync application"""
+        """Initialize the Partner Sharing application"""
         self.server = os.getenv('IMMICH_SERVER', 'http://localhost:2283')
         self.dry_run = os.getenv('DRY_RUN', 'false').lower() == 'true'
         
@@ -128,7 +128,7 @@ class ImmichFaceSync:
 
     def run_sync_cycle(self):
         """Run a complete sync cycle for all mappings"""
-        logger.info("🚀 Starting Face Sync cycle")
+        logger.info("🚀 Starting Partner Sharing cycle")
         start_time = datetime.now()
         
         results = []
@@ -173,7 +173,7 @@ class ImmichFaceSync:
 
 def main():
     """Main application entry point"""
-    logger.info("🌟 Immich Face Sync - Community Edition")
+    logger.info("🌟 Immich Partner Sharing - Community Edition")
     logger.info("ℹ️  Using immich-face-to-album package")
     
     try:
